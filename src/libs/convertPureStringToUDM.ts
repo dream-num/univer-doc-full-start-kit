@@ -65,3 +65,32 @@ export function emptyUDM(): IDocumentBody {
     ],
   }
 }
+
+// {
+//   body: convertPureStringToUDM(''),
+//   drawings: {},
+//   drawingsOrder: [],
+//   headers: {},
+//   footers: {},
+//   documentStyle: {
+//     documentFlavor: DocumentFlavor.TRADITIONAL, // enable header and footer
+//     pageSize: {
+//       width: ptToPixel(595),
+//       height: ptToPixel(842),
+//     },
+//     marginTop: ptToPixel(50),
+//     marginBottom: ptToPixel(50),
+//     marginRight: ptToPixel(40),
+//     marginLeft: ptToPixel(40),
+//     renderConfig: {
+//       vertexAngle: 0,
+//       centerAngle: 0,
+//     },
+//     defaultHeaderId: '',
+//     defaultFooterId: '',
+//     evenPageHeaderId: '',
+//     evenPageFooterId: '',
+//     firstPageHeaderId: '',
+//     firstPageFooterId: '',
+//   },
+// }

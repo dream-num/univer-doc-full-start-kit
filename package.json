@@ -1,11 +1,12 @@
 {
-  "name": "univer-doc-start-kit",
+  "name": "univer-doc-full-start-kit",
   "type": "module",
   "version": "0.0.0",
   "private": true,
   "description": "A starter kit for Univer Document",
   "scripts": {
     "prepare": "simple-git-hooks",
+    "start": "vite",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint .",
