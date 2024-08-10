@@ -8,6 +8,7 @@ import DocsHyperLinkUIEnUS from '@univerjs/docs-hyper-link-ui/locale/en-US'
 import DrawingUIEnUS from '@univerjs/drawing-ui/locale/en-US'
 import DocsDrawingUIEnUS from '@univerjs/docs-drawing-ui/locale/en-US'
 import CollaborationClientEnUS from '@univerjs-pro/collaboration-client/locale/en-US'
+import UniverThreadCommentUiEnUs from '@univerjs/thread-comment-ui/locale/en-US'
 
 export const locales = {
   [LocaleType.EN_US]: Tools.deepMerge(
@@ -20,5 +21,6 @@ export const locales = {
     DrawingUIEnUS,
     DocsDrawingUIEnUS,
     CollaborationClientEnUS,
+    UniverThreadCommentUiEnUs,
   ),
 }

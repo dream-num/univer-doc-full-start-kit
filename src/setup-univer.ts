@@ -4,6 +4,7 @@ import '@univerjs/docs-hyper-link-ui/lib/index.css'
 import '@univerjs/drawing-ui/lib/index.css'
 import '@univerjs/docs-drawing-ui/lib/index.css'
 import '@univerjs-pro/collaboration-client/lib/index.css'
+import '@univerjs/thread-comment-ui/lib/index.css'
 
 import { IConfigService, IUndoRedoService, LocaleType, LogLevel, Univer, UniverInstanceType } from '@univerjs/core'
 import { defaultTheme } from '@univerjs/design'
@@ -19,6 +20,8 @@ import { UniverDrawingUIPlugin } from '@univerjs/drawing-ui'
 import { UniverDocsDrawingPlugin } from '@univerjs/docs-drawing'
 import { UniverDocsDrawingUIPlugin } from '@univerjs/docs-drawing-ui'
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration'
+import { UniverDocsThreadCommentUIPlugin } from '@univerjs/docs-thread-comment-ui'
+
 import { COLLAB_SUBMIT_CHANGESET_URL_KEY, COLLAB_WEB_SOCKET_URL_KEY, SEND_CHANGESET_TIMEOUT_KEY, SNAPSHOT_SERVER_URL_KEY, UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client'
 
 import { FUniver } from '@univerjs/facade'
@@ -63,6 +66,7 @@ export function setupUniver() {
   univer.registerPlugin(UniverDrawingUIPlugin)
   univer.registerPlugin(UniverDocsDrawingPlugin)
   univer.registerPlugin(UniverDocsDrawingUIPlugin)
+  univer.registerPlugin(UniverDocsThreadCommentUIPlugin)
 
   const configService = univer.__getInjector().get(IConfigService)
   const host = window.location.host
@@ -75,7 +79,7 @@ export function setupUniver() {
   univer.registerPlugin(UniverCollaborationClientPlugin, {
     enableOfflineEditing: true,
     enableSingleActiveInstanceLock: true,
-    collaborationUniverTypes: [UniverInstanceType.UNIVER_DOC],
+    // collaborationUniverTypes: [UniverInstanceType.UNIVER_DOC],
     enableAuthServer: true,
   })
 
