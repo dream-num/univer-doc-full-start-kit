@@ -5,6 +5,7 @@ import '@univerjs/drawing-ui/lib/index.css'
 import '@univerjs/docs-drawing-ui/lib/index.css'
 import '@univerjs-pro/collaboration-client/lib/index.css'
 import '@univerjs/thread-comment-ui/lib/index.css'
+import '@univerjs-pro/exchange-client/lib/index.css'
 
 import { IConfigService, IUndoRedoService, LocaleType, LogLevel, Univer, UniverInstanceType } from '@univerjs/core'
 import { defaultTheme } from '@univerjs/design'
@@ -21,6 +22,8 @@ import { UniverDocsDrawingPlugin } from '@univerjs/docs-drawing'
 import { UniverDocsDrawingUIPlugin } from '@univerjs/docs-drawing-ui'
 import { UniverCollaborationPlugin } from '@univerjs-pro/collaboration'
 import { UniverDocsThreadCommentUIPlugin } from '@univerjs/docs-thread-comment-ui'
+import { UniverExchangeClientPlugin } from '@univerjs-pro/exchange-client'
+import { UniverDocsExchangeClientPlugin } from '@univerjs-pro/docs-exchange-client'
 
 import { COLLAB_SUBMIT_CHANGESET_URL_KEY, COLLAB_WEB_SOCKET_URL_KEY, SEND_CHANGESET_TIMEOUT_KEY, SNAPSHOT_SERVER_URL_KEY, UniverCollaborationClientPlugin } from '@univerjs-pro/collaboration-client'
 
@@ -82,6 +85,9 @@ export function setupUniver() {
     // collaborationUniverTypes: [UniverInstanceType.UNIVER_DOC],
     enableAuthServer: true,
   })
+
+  univer.registerPlugin(UniverExchangeClientPlugin)
+  univer.registerPlugin(UniverDocsExchangeClientPlugin)
 
   const url = new URL(window.location.href)
   const unit = url.searchParams.get('unit')

@@ -14,6 +14,12 @@ importers:
       '@univerjs-pro/collaboration-client':
         specifier: ^0.2.8
         version: 0.2.8(kjllunrec7drkwrdglxlm5hc6m)
+      '@univerjs-pro/docs-exchange-client':
+        specifier: ^0.2.8
+        version: 0.2.8(ncrv6oyo2vohzldjrhgdbcjyxe)
+      '@univerjs-pro/exchange-client':
+        specifier: ^0.2.8
+        version: 0.2.8(@grpc/grpc-js@1.11.1)(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/design@0.2.8(clsx@2.1.1)(dayjs@1.11.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@univerjs/network@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(@univerjs/ui@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/design@0.2.8(clsx@2.1.1)(dayjs@1.11.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@univerjs/engine-formula@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/rpc@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(rxjs@7.8.1))(@univerjs/engine-render@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(clsx@2.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.5.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/core':
         specifier: ^0.2.8
         version: 0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1)
@@ -743,6 +749,23 @@ packages:
       '@univerjs/sheets-filter': 0.2.8
       '@univerjs/sheets-hyper-link': 0.2.8
       '@univerjs/thread-comment': 0.2.8
+
+  '@univerjs-pro/docs-exchange-client@0.2.8':
+    resolution: {integrity: sha512-yjKOmsh2Gkwz8wC3qGnDI4CwfxVp15HXK1V/OOr7jPdNVMHiO9eEEpzYarRxDagkBdpEvp1Kl2V0vt8+NWYIAg==}
+    peerDependencies:
+      '@univerjs-pro/exchange-client': 0.2.8
+      '@univerjs/core': 0.2.8
+      '@univerjs/ui': 0.2.8
+
+  '@univerjs-pro/exchange-client@0.2.8':
+    resolution: {integrity: sha512-kDmSDXsTJOrAjGslXtcr524zZmM9YBqf9wH3zHDrbLAoy8o8XvQudt7OEr9RW9rQtYKYazVJUdJF620O0fweUw==}
+    peerDependencies:
+      '@univerjs/core': 0.2.8
+      '@univerjs/design': 0.2.8
+      '@univerjs/network': 0.2.8
+      '@univerjs/ui': 0.2.8
+      react: ^16.9.0 || ^17.0.0 || ^18.0.0
+      rxjs: '>=7.0.0'
 
   '@univerjs/core@0.2.8':
     resolution: {integrity: sha512-4rIKpE+cUqUhs3sEQfY3tQf7fwN3JY8evO9S+vhvgwDLtZD9N+ZHG1nR0FLFC4tQ3A7TF1rDsmfItrH+H/Q9Ew==}
@@ -3311,6 +3334,38 @@ snapshots:
     transitivePeerDependencies:
       - '@grpc/grpc-js'
       - rxjs
+
+  '@univerjs-pro/docs-exchange-client@0.2.8(ncrv6oyo2vohzldjrhgdbcjyxe)':
+    dependencies:
+      '@univerjs-pro/exchange-client': 0.2.8(@grpc/grpc-js@1.11.1)(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/design@0.2.8(clsx@2.1.1)(dayjs@1.11.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@univerjs/network@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(@univerjs/ui@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/design@0.2.8(clsx@2.1.1)(dayjs@1.11.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@univerjs/engine-formula@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/rpc@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(rxjs@7.8.1))(@univerjs/engine-render@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(clsx@2.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.5.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/core': 0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/docs': 0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/engine-render@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(rxjs@7.8.1)
+      '@univerjs/docs-ui': 0.2.8(endmcwpwv3uyohdxnwpfdo46my)
+      '@univerjs/icons': 0.1.75(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@univerjs/protocol': 0.1.39-alpha.4(@grpc/grpc-js@1.11.1)(rxjs@7.8.1)
+      '@univerjs/ui': 0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/design@0.2.8(clsx@2.1.1)(dayjs@1.11.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@univerjs/engine-formula@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/rpc@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(rxjs@7.8.1))(@univerjs/engine-render@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(clsx@2.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.5.3)
+    transitivePeerDependencies:
+      - '@grpc/grpc-js'
+      - '@univerjs/design'
+      - '@univerjs/engine-render'
+      - clsx
+      - react
+      - react-dom
+      - rxjs
+
+  '@univerjs-pro/exchange-client@0.2.8(@grpc/grpc-js@1.11.1)(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/design@0.2.8(clsx@2.1.1)(dayjs@1.11.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@univerjs/network@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(@univerjs/ui@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/design@0.2.8(clsx@2.1.1)(dayjs@1.11.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@univerjs/engine-formula@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/rpc@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(rxjs@7.8.1))(@univerjs/engine-render@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(clsx@2.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.5.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)':
+    dependencies:
+      '@univerjs/core': 0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1)
+      '@univerjs/design': 0.2.8(clsx@2.1.1)(dayjs@1.11.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@univerjs/icons': 0.1.75(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@univerjs/network': 0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1)
+      '@univerjs/protocol': 0.1.39-alpha.4(@grpc/grpc-js@1.11.1)(rxjs@7.8.1)
+      '@univerjs/ui': 0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/design@0.2.8(clsx@2.1.1)(dayjs@1.11.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@univerjs/engine-formula@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(@univerjs/rpc@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(rxjs@7.8.1))(@univerjs/engine-render@0.2.8(@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1))(rxjs@7.8.1))(clsx@2.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(typescript@5.5.3)
+      react: 18.3.1
+      rxjs: 7.8.1
+    transitivePeerDependencies:
+      - '@grpc/grpc-js'
+      - react-dom
 
   '@univerjs/core@0.2.8(@grpc/grpc-js@1.11.1)(react@18.3.1)(rxjs@7.8.1)':
     dependencies:

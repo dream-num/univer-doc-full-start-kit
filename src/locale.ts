@@ -9,6 +9,7 @@ import DrawingUIEnUS from '@univerjs/drawing-ui/locale/en-US'
 import DocsDrawingUIEnUS from '@univerjs/docs-drawing-ui/locale/en-US'
 import CollaborationClientEnUS from '@univerjs-pro/collaboration-client/locale/en-US'
 import UniverThreadCommentUiEnUs from '@univerjs/thread-comment-ui/locale/en-US'
+import UniverExchangeClientEnUS from '@univerjs-pro/exchange-client/locale/en-US'
 
 export const locales = {
   [LocaleType.EN_US]: Tools.deepMerge(
@@ -22,5 +23,6 @@ export const locales = {
     DocsDrawingUIEnUS,
     CollaborationClientEnUS,
     UniverThreadCommentUiEnUs,
+    UniverExchangeClientEnUS,
   ),
 }
