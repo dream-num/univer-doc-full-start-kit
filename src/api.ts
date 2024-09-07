@@ -85,7 +85,7 @@ export function setupUndo($toolbar: HTMLElement, univerAPI: FUniver) {
     if (!univerAPI)
       throw new Error('univerAPI is not defined')
 
-    univerAPI.executeCommand('univer.command.undo')
+    univerAPI.undo()
   })
 }
 
@@ -98,6 +98,19 @@ export function setupRedo($toolbar: HTMLElement, univerAPI: FUniver) {
     if (!univerAPI)
       throw new Error('univerAPI is not defined')
 
-    univerAPI.executeCommand('univer.command.redo')
+    univerAPI.redo()
+  })
+}
+
+export function setupSelectText($toolbar: HTMLElement, univerAPI: FUniver) {
+  const $button = document.createElement('a')
+  $button.textContent = 'select text'
+  $toolbar.appendChild($button)
+
+  $button.addEventListener('click', () => {
+    if (!univerAPI)
+      throw new Error('univerAPI is not defined')
+
+    univerAPI.getActiveDocument()?.setSelection(0, 1)
   })
 }
