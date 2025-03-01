@@ -1,4 +1,4 @@
-import type { FUniver } from '@univerjs/facade'
+import type { FUniver } from '@univerjs/presets'
 import { setupCommandsListenerSwitch, setupEditSwitch, setupRedo, setupSelectText, setupUndo } from './api'
 
 export function setupToolbar(univerAPI: FUniver) {

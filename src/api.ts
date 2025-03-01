@@ -1,4 +1,4 @@
-import type { FUniver } from '@univerjs/facade'
+import type { FUniver } from '@univerjs/presets'
 
 export function setupCommandsListenerSwitch($toolbar: HTMLElement, univerAPI: FUniver) {
   const $button = document.createElement('a')
@@ -18,7 +18,7 @@ export function setupCommandsListenerSwitch($toolbar: HTMLElement, univerAPI: FU
       return
     }
 
-    listener = univerAPI.onCommandExecuted((command) => {
+    listener = univerAPI.addEvent(univerAPI.Event.CommandExecuted, (command) => {
       // eslint-disable-next-line no-console
       console.log(command)
     })
@@ -66,7 +66,7 @@ export function setupEditSwitch($toolbar: HTMLElement, univerAPI: FUniver) {
     }
     window.addEventListener('error', errListener)
     window.addEventListener('unhandledrejection', errListener)
-    listener = univerAPI.onBeforeCommandExecute(() => {
+    listener = univerAPI.addEvent(univerAPI.Event.BeforeCommandExecute, () => {
       throw new DisableEditError()
     })
 
